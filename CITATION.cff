@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with the datasets it was run on."
+title: "wearable-witness"
+version: 0.1.0
+date-released: 2026-09-03
+license: MIT
+repository-code: "https://github.com/ANcpLua/wearable-witness"
+type: software
+authors:
+  - family-names: Nachtmann
+    given-names: Alexander
+abstract: >-
+  Holds a wearable's reported heart rate against a reference recording and
+  reports agreement with confidence intervals, or not_evaluated when the
+  evidence is insufficient. Inputs are hashed, analysis policy is serialised
+  with every report, and three known-answer controls run with every result.
+references:
+  - type: article
+    title: "Description of a Database Containing Wrist PPG Signals Recorded during Physical Exercise with Both Accelerometer and Gyroscope Measures of Motion"
+    authors:
+      - family-names: Jarchi
+        given-names: Delaram
+      - family-names: Casson
+        given-names: Alexander J.
+    journal: Data
+    year: 2017
+    volume: 2
+    issue: 1
+    doi: 10.3390/data2010001
+  - type: data
+    title: "BigIdeasLab_STEP: Heart rate measurements captured by smartwatches for differing skin tones (version 1.0)"
+    authors:
+      - family-names: Bent
+        given-names: Brinnae
+      - family-names: Dunn
+        given-names: Jessilyn
+    year: 2021
+    doi: 10.13026/cqfy-d860
+  - type: article
+    title: "Investigating sources of inaccuracy in wearable optical heart rate sensors"
+    authors:
+      - family-names: Bent
+        given-names: Brinnae
+      - family-names: Goldstein
+        given-names: Benjamin A.
+      - family-names: Kibbe
+        given-names: Warren A.
+      - family-names: Dunn
+        given-names: Jessilyn P.
+    journal: npj Digital Medicine
+    year: 2020
+    volume: 3
+    doi: 10.1038/s41746-020-0226-6

@@ -1,0 +1,15 @@
+[package]
+name = "ww-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Hold a wearable's accuracy claim against an attested reference recording"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+
+[lints]
+workspace = true

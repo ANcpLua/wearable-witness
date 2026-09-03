@@ -1,0 +1,20 @@
+[package]
+name = "ww-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Command surface over ww-core"
+
+[[bin]]
+name = "ww"
+path = "src/main.rs"
+
+[dependencies]
+ww-core = { path = "../core" }
+serde_json.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+
+[lints]
+workspace = true

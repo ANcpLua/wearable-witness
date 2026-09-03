@@ -1,0 +1,12 @@
+/target
+/.venv
+.DS_Store
+*.swp
+# Raw PhysioNet bytes: fetched by tools/fetch.sh, verified against corpus/index.json, never committed
+/corpus/records/
+# BigIdeasLab_STEP: PhysioNet restricted data under a signed DUA. The raw bytes,
+# every series derived from them, and the per-participant index are the data in
+# another form and are never committed. The adapter regenerates all of it; the
+# README's step-provenance block carries the upstream hash.
+/corpus-step/
+/series-step/

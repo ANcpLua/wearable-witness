@@ -1,0 +1,40 @@
+[
+  {
+    "id": "literature-mape-10",
+    "applies_to": { "kind": "any" },
+    "quote": "we defined an acceptable error rate for a physical monitoring device to be ±10%, as this is considered an accurate threshold for medical ECG monitors. We recognize that this is more lenient than some prior health sciences research on wearable HR accuracy [7] and pedometer step counting accuracy [40,41] that have defined an acceptable error rate to be ±5%. In line with recent recommendations [37,38], we used MAPE to determine acceptable error rate.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6431828/",
+    "retrieved": "2026-09-02",
+    "page_sha256": "3b593ab014026a1a9556b18709a0d3d9ee84d14a411423c8e0f19f3d47958c88",
+    "derivation": "\"acceptable error rate ... ±10%\" measured as MAPE, read as: mean absolute percentage error must not exceed 0.10. Nelson BW, Allen NB. JMIR Mhealth Uhealth 2019;7(3):e10828.",
+    "threshold": { "kind": "mape_at_most", "max": 0.10 },
+    "note": "A threshold from the validation literature, not a vendor's promise. The paper itself calls it lenient."
+  },
+  {
+    "id": "ec13-tolerance",
+    "applies_to": { "kind": "any" },
+    "quote": "According to the standard ANSI/AAMI EC13:2002 (R2007) \"Cardiac Monitors, Heart Rate Meters, and Alarms\" (ANSI/AAMI, 2007), which was later superseded by ANSI/AAMI/IEC 60601-2-27:2011 (R2016) (ANSI/AAMI, 2016), the HR measurement error should not be greater than ±10% or ±5 bpm, whichever is greater. It should be noted, however, that this standard applies to ECG-based devices and it specifically excludes PPG-based devices.",
+    "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1638809/full",
+    "retrieved": "2026-09-02",
+    "page_sha256": "f1d71086ff08157b7e3629e656ce352e4a968e9560125260bbe69611195bb8e5",
+    "note": "States a per-reading tolerance but no proportion of readings that must meet it, so it pins no testable bound. The report uses it as the descriptive tolerance rule (±5 bpm or ±10%, whichever is greater) and shows the fraction of epochs inside it with an interval. Quoted from a secondary source; the standard itself is paywalled."
+  },
+  {
+    "id": "apple-watch-hr",
+    "applies_to": { "kind": "device", "name": "Apple Watch" },
+    "quote": "Even under ideal conditions, Apple Watch may not be able to get a reliable heart rate reading every time for everybody. And for a small percentage of users, various factors may make it impossible to get any heart rate reading at all.",
+    "url": "https://support.apple.com/en-us/120277",
+    "retrieved": "2026-09-02",
+    "page_sha256": "56e42e391d13a9f06dd89bbf7fd337c377e5572a1cb9629ad951537ff4fe284b",
+    "note": "The vendor's own words. No accuracy figure is stated anywhere on the page, so nothing here can be refuted; that absence is the finding."
+  },
+  {
+    "id": "fitbit-hr",
+    "applies_to": { "kind": "device", "name": "Fitbit" },
+    "quote": "Fitbit's heart rate tracking accuracy is affected by your personal physiology, device placement on your arm, and the activity you're doing.",
+    "url": "https://support.google.com/fitbit/answer/14237938?hl=en",
+    "retrieved": "2026-09-02",
+    "page_sha256": "5a786abbd13bce2913977d3dcdde9322ffdce6c1f08f9f37643981ec6f22dc9c",
+    "note": "The vendor's own words. No accuracy figure is stated, so nothing here can be refuted."
+  }
+]
